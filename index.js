@@ -42,7 +42,9 @@ window.addEventListener('message', function(e) {
     if (iframe.contentWindow == e.source) {
       switch (e.data.message) {
         case 'iframify height':
-          iframe.style.height = e.data.height + 'px';
+          if (iframe.style.height != e.data.height + 'px') {
+            iframe.style.height = e.data.height + 'px';
+          }
           break;
       }
     }
@@ -61,6 +63,7 @@ function iframify(html) {
   iframe.style.background = 'transparent';
   iframe.style.border = 'none';
   iframe.style.width = '100%';
+  iframe.style.height = '0px';
   iframe.style.display = 'block';
   return iframe;
 }
