@@ -1,6 +1,6 @@
 {
   "name": "iframify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wraps the given HTML code in an iframe that resizes dynamically to fit its contents.",
   "tags": ["iframe", "html", "resize", "wrap", "client side"],
   "dependencies": {
