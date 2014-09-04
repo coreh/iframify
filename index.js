@@ -44,7 +44,7 @@ window.addEventListener('message', function(e) {
         case 'iframify height':
           if (iframe.style.height != e.data.height + 'px') {
             iframe.style.height = e.data.height + 'px';
-            var ev = new CustomEvent("resize", { cancelable: false, bubbles: false });
+            var ev = new CustomEvent("resize", { cancelable: false, bubbles: true });
             iframe.dispatchEvent(ev);
           }
           break;
