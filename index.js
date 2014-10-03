@@ -27,7 +27,7 @@ var script = function(){
 
 var PRELUDE = 'data:text/html;charset=utf-8,';
 var DOCTYPE = escape('<!DOCTYPE html>');
-var BASE = escape('<base href="' + window.location.origin + '" target="_parent">');
+var BASE = escape('<base href="' + window.location.origin + '" target="_blank">');
 var STYLE = escape('<style> body { margin: 0 } </style>');
 var SCRIPT = escape('<script>(' + script.toString() + ')();<' + '/script>');
 
